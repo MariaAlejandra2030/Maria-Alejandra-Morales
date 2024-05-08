@@ -1,84 +1,94 @@
-body{
+body
+{
     margin: 0px;
     padding: 0px;
     font-family: system-ui;
-
 }
 
 
-.top-section{
+.top-section
+{
     text-align: center;
     padding: 20px;
     
 }
 
-.top-section{
-
+.top-section
+{
 background-image: linear-gradient(to top right, #219b9e, rgb(250, 216, 136));
 }
 
 
-.profile {
+.profile 
+{
     width: 200px;
     margin-right: 1300px;
+    
 }
 
-.p1 {
+.p1 
+{
     color: white;
     font-size: 35px;
     font-weight: bold;
     margin: 15px;
+    flex: 1;
 }
 
-.p5 {
-
+.p5 
+{
     color: #5e5e5e;
     margin-top: 60px;
     margin-right: 130px;
-
+    flex: 1;
 }
 
-.p4 {
-
+.p4 
+{
 color: #5e5e5e;
 margin-right: 280px;
 margin-top: -120px;
+flex: 1;
 }
-/* Estilos para la tabla */
-.wide-table {
-    width: 30%; /* Ancho de la tabla */
-    border-collapse: collapse; /* Colapsar los bordes de las celdas */
+
+.wide-table 
+{
+    width: 30%; 
+    border-collapse: collapse; 
     margin-left: 500px;   
 }
 
-/* Estilos para las celdas de la tabla */
-.wide-table td {
-    border: 1px solid #5e5e5e; /* Borde de las celdas */
-    padding: 3px; /* Espacio interno de las celdas */
-    text-align: center; /* Alineación del texto */
+
+.wide-table td 
+{
+    border: 1px solid #5e5e5e; 
+    padding: 3px; 
+    text-align: center; 
     color: #5e5e5e;
 }
 
 
-.img {
+.img 
+{
     width: 150px;
 }
 
-.col-div-8{
+.col-div-8
+{
    margin-top: -220px;
-    float: right;
-    
+    float: right;  
 }
 
-.head{
+.head
+{
     font-size: 40px;
     font-weight: 700;
     color: #219b9e;
     letter-spacing:-3px
-
 }
 
-.centered-text {
+.centered-text 
+{
     margin-top: 60px;
     margin-right: px;
     color: #5e5e5e;
@@ -87,14 +97,14 @@ margin-top: -120px;
 }
 
 
-.container {
-
+.container 
+{
     margin-top: 100px;
 }
 
 .container1
 {
-text-align: center;
+    text-align: center;
 }
 
 .container2
@@ -104,10 +114,10 @@ color: #5e5e5e;
 margin-top: -25px;
 font-size: 14px;
 margin-right: 70px;
-
 }
 
-.head4, .head5, .head6 {
+.head4, .head5, .head6 
+{
     font-size: 75px;
     font-weight: 700;
     color: #219b9e;
@@ -115,20 +125,23 @@ margin-right: 70px;
     margin: -3px;
 
     }
-    .head6 {
-        margin-top: -145px;
-        font-weight: 600;
-    }
+.head6 
+{
+    margin-top: -145px;
+    font-weight: 600;
+}
 
-    .head4 {
+.head4 
+{
+    margin-bottom: -245px;
+    font-size: 95px;
+    font-weight: 600;
+}
 
-     margin-bottom: -245px;
-     font-size: 95px;
-     font-weight: 600;
-
-    }
-
-    .head5 {
+.head5 
+{
         font-size: 138px
-       }
+}
+
+
 
