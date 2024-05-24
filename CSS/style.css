@@ -1,147 +1,199 @@
-body
-{
-    margin: 0px;
-    padding: 0px;
-    font-family: system-ui;
+/*
+1.Posicionamiento
+2.modelo caja(box model) 
+3.Tipografia
+4.Visuales
+5.Miscelanios (otros)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
-
-.top-section
-{
-    text-align: center;
-    padding: 20px;
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top right, #219b9e, rgb(250, 216, 136));
+    padding: 50px 25px;
     
 }
-
-.top-section
+.derecha ul {
+    list-style: none;
+}
+header img
 {
-background-image: linear-gradient(to top right, #219b9e, rgb(250, 216, 136));
+    width: 50%;
+    margin-bottom: 10px;
 }
 
-
-.profile 
-{
-    width: 200px;
-    margin-right: 1300px;
-    
+.header--title-container{
+    display: flex;
+    justify-content: center;
 }
 
-.p1 
-{
-    color: white;
-    font-size: 35px;
-    font-weight: bold;
-    margin: 15px;
-    flex: 1;
+.header--title-container h1 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 32px;
+        color: white;
+        text-align: center;
+ }
+
+main {
+    width: 100%;
+    height: auto;
+    color: #adadad;
+
 }
 
-.p5 
-{
-    color: #5e5e5e;
-    margin-top: 60px;
-    margin-right: 130px;
-    flex: 1;
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+section.pantalla-dividida {
+    padding: 50px 25px;
+}
+.izquierda {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.p4 
-{
-color: #5e5e5e;
-margin-right: 280px;
-margin-top: -120px;
-flex: 1;
-}
-
-.wide-table 
-{
-    width: 30%; 
-    border-collapse: collapse; 
-    margin-left: 500px;   
-}
-
-
-.wide-table td 
-{
-    border: 1px solid #5e5e5e; 
-    padding: 3px; 
-    text-align: center; 
-    color: #5e5e5e;
-}
-
-
-.img 
-{
-    width: 150px;
-}
-
-.col-div-8
-{
-   margin-top: -220px;
-    float: right;  
-}
-
-.head
-{
-    font-size: 40px;
-    font-weight: 700;
-    color: #219b9e;
-    letter-spacing:-3px
-}
-
-.centered-text 
-{
-    margin-top: 60px;
-    margin-right: px;
-    color: #5e5e5e;
-    text-align: center;
-    margin-right: 65px;
-}
-
-
-.container 
-{
-    margin-top: 100px;
-}
-
-.container1
-{
-    text-align: center;
-}
-
-.container2
-{
-text-align: center;
-color: #5e5e5e;
-margin-top: -25px;
-font-size: 14px;
-margin-right: 70px;
+.izquierda h2 {
+    font-size: 45px;
 }
 
 .head4, .head5, .head6 
 {
-    font-size: 75px;
     font-weight: 700;
     color: #219b9e;
-    letter-spacing: -6px;
-    margin: -3px;
-
-    }
-.head6 
-{
-    margin-top: -145px;
-    font-weight: 600;
+    text-align: center;
+}
+p.head4 {
+    font-size: 42px;
+}
+.head5 {
+    font-size: 65px;
+    line-height: 34px;
 }
 
-.head4 
-{
-    margin-bottom: -245px;
-    font-size: 95px;
-    font-weight: 600;
+.head6 {
+    font-size: 30px;
+    margin-top: 8px;
 }
 
-.head5 
+.derecha {
+    font-size: 20px;
+    color: #5e5e5e;
+    margin-top: 25px;
+} 
+
+.derecha img {
+    width: 15px;
+    height: 15px;
+}
+
+.pantalla-dividida3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px;
+}
+strong {
+    display: block;
+}
+
+.container {
+    text-align: center;
+    font-size: 30px;
+    color: #5e5e5e;
+}
+
+.container1 {
+
+    font-size: 35px;
+    color: #5e5e5e;
+}
+
+.container2 {
+
+    font-size: 25px;
+    color: #5e5e5e;
+}
+.wide-table 
 {
-        font-size: 138px
+    border-collapse: collapse;
+    width:400px;
 }
 
 
 
+.wide-table td 
+{
+    border: 1px solid #5e5e5e;
+    padding: 8px;
+    text-align: center;
+    color: #5e5e5e;
+}
+h1.centered-text {
+    font-size: 42px;
+}
+h1.centered-text1 {
+    font-size: 20px;
+}
+p.centered-text {
+    font-size: 22px;
+}
+
+@media (min-width: 1024px) {
+    .head4, .head5, .head6 {
+    font-size: 140px;
+   }
+   .pantalla-dividida {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+header img
+{
+    width: 20%;
+}
+header {
+    align-items:flex-start;
+}
+
+.header--title-container h1 {
+    font-size: 39px;
+    line-height: 51px;
+    max-width: 916px;
+    margin: 25px 160px;
+}
+.header--title-container h1 span {
+    display: block;
+}
+
+p.head4 {
+    font-size: 59px;
+}
+.head5 {
+    font-size: 90px;
+}
+
+.head6 {
+    font-size: 41px;
+}
+
+.derecha {
+    font-size: 23px;
+}
+
+}
